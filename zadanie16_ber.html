@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="color:green;font-size:50px;">
+        <script language="JavaScript">
+            var a_ber=prompt("A=","");
+            var b_ber=prompt("B=","");
+            var a = parseFloat(a_ber);
+            var b = parseFloat(b_ber);
+            var wynik1_ber = a*a*a;
+            var wynik2_ber = 3*(a*a*b);
+            var wynik3_ber = 3*(a*b*b);
+            var wynik4_ber = b*b*b;
+            var wynik_ber = wynik1_ber + wynik2_ber + wynik3_ber + wynik4_ber;
+            document.write("(" + a + " + " + b + ")³ = " + a + "³ + 3*" + a + "²*" + b + " + 3*" + a + "*" + b + "² + " + b + "³ = " + wynik1_ber + " + " + wynik2_ber + " + " + wynik3_ber + " + " + wynik4_ber + " = " + wynik_ber);
+
+            function okno_zamknij_Berdys(){
+                window.close();
+            }
+        </script>
+    </div>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Berdys()"/>
+</body>
+</html>

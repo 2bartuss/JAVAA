@@ -1,0 +1,25 @@
+
+<html>
+<head>
+    <script language="JavaScript">
+        var x1_ber = parseFloat(prompt("x1_ber=","")); 
+        var x2_ber = parseFloat(prompt("x2_ber=","")); 
+        
+        var rad_x1_ber = (x1_ber*Math.PI)/180;
+        document.write("x1 = " + x1_ber + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "x2 = " + x2_ber + "<br>");
+        document.write("x1 = " + x1_ber + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "x1 = " + rad_x1_ber.toFixed(2) + "<br>");
+
+        var y1_ber = 3*Math.pow(x1_ber, 2/3);
+        document.write("y1 = " + y1_ber.toFixed(2) + "<br>");
+
+        var y2_ber = 2*Math.cos(rad_x1_ber) + 3*Math.sin(rad_x1_ber);
+        document.write("y2 = " + y2_ber.toFixed(2) + "<br>");
+
+        var akuku = Math.pow(x1_ber,5) + 2*Math.pow(x2_ber, 4);
+        var y3_ber = Math.pow(akuku, 1/3)*Math.abs(x1_ber-x2_ber);
+        document.write("y3 = " + y3_ber.toFixed(2) + "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
