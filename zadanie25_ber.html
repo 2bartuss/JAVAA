@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>berdys 3G</title>
+</head>
+<body>
+    <div style="color: green; font-size: 28px;">
+        <script>
+            var N0_ber = parseFloat(prompt("N0=",""));
+            var t_ber = parseFloat(prompt("t=",""));
+            var T12_ber = parseFloat(prompt("T1/2=",""));
+
+            var lambda_ber = Math.log(2) / T12_ber;
+            var N_ber = N0_ber * Math.pow(Math.E, -lambda_ber*t_ber);
+
+            document.write("N0=" + N0_ber + "<br>");
+            document.write("t=" + t_ber + "<br>");
+            document.write("T1/2=" + T12_ber + "<br>");
+            document.write("lambda=" + lambda_ber.toFixed(7) + "<br>");
+            document.write("N=" + N_ber.toFixed(7) + "<br>");
+        </script>
+    </div>
+</body>
+</html>
+<!-- Bartosz berdys 3G -->

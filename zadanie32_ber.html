@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function ciezarowka(marka, ladownosc, paliwo, przebieg) {
+    this.marka = marka;
+    this.ladownosc = ladownosc;
+    this.paliwo = paliwo;
+    this.przebieg = przebieg;
+}
+
+ciezarowka.prototype.wypisz = function () {
+    alert(this.marka + ' ' + this.ladownosc + ' ' + this.paliwo + ' ' + this.przebieg + ' km');
+};
+
+var tir1 = new ciezarowka("Scania", "25 ton", "diesel", 500000);
+var tir2 = new ciezarowka("DAF", "20 ton", "diesel", 420000);
+var tir3 = new ciezarowka("Mercedes", "30 ton", "diesel", 610000);
+
+document.write("Dostęp do właściwości<br>");
+document.write("tir pierwszy " + tir1.marka + " " + tir1.ladownosc + " " + tir1.paliwo + " " + tir1.przebieg + "<br>");
+document.write("tir drugi " + tir2.marka + " " + tir2.ladownosc + " " + tir2.paliwo + " " + tir2.przebieg + "<br>");
+document.write("tir trzeci " + tir3.marka + " " + tir3.ladownosc + " " + tir3.paliwo + " " + tir3.przebieg + "<br>");
+
+tir1.wypisz();
+tir2.wypisz();
+tir3.wypisz();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe – ciężarówka
+</body>
+</html>

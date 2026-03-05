@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+    var Ciezarowka = {
+        marka: 'MAN',
+        ladownosc: '18 ton',
+        paliwo: 'diesel',
+        ciezarowka_pokaz_berdys: function (){
+            document.write(
+                "Marka: " + this.marka + "<br>" +
+                "Ładowność: " + this.ladownosc + "<br>" +
+                "Paliwo: " + this.paliwo
+            );
+        }
+    }
+
+    Ciezarowka.ciezarowka_pokaz_berdys();
+    Ciezarowka.przebieg = 350000;
+    Ciezarowka.wypisz = function() {
+        alert('Przebieg: ' + this.przebieg + ' km');
+    }
+    Ciezarowka.wypisz();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe – ciężarówka
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<textarea cols="130" rows="26">
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Berdys 3G</title>
+</head>
+<body>
+
+    <script>
+        var odl_ber = parseFloat(prompt("odl=",""));
+        var s_ber = parseFloat(prompt("s=",""));
+        
+        var h_ber = Math.sqrt(s_ber*s_ber - odl_ber*odl_ber)
+        var kat_ber_rad = Math.asin(h_ber/s_ber);
+        var kat_ber = kat_ber_rad * 180 / Math.PI;
+
+        document.write("odl = " + odl_ber + "<br>");
+        document.write("s = " + s_ber + "<br>");
+        document.write("h = " + h_ber.toFixed(2) + "<br>");
+        document.write("kąt = " + kat_ber.toFixed(2) + "° <br>");
+    </script>
+</body>
+</html>
+<!-- Berdys  3G -->
+</textarea>
+</body>
+</html>
